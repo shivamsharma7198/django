@@ -1,0 +1,2 @@
+# django
+simple crud views
