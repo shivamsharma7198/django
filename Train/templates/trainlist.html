@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block shivam%}
+
+<ul>
+{% for train in trains %}
+            <li>
+            <a href="{% url 'Train_Detail' train.pk %}">{{train.name}}</a>  -  {{train.Platform_no}}</br></li>
+{%endfor%}
+
+</ul>
+{%endblock%}
+</body>
+</html>
