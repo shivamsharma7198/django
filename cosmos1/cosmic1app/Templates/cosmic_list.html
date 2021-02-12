@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cosmos</title>
+</head>
+<body>
+<ul>
+    {% for cos in object_list %}
+    <li>
+        <a href = "{% url 'cosmic-detail' cos.pk %}">{{cos.planetary_body}}</a>
+        {{"-->>"}}{{cos.category}}<br/>
+    </li>
+    {% endfor %}
+</ul>
+</body>
+</html>
